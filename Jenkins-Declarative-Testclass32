@@ -34,7 +34,6 @@ pipeline{
         sh "echo build and release job completed successfully"
       }     
     }
-/*
     stage('5deployment'){
       steps{
         deploy adapters: [tomcat9(credentialsId: 'tomcat-credentials', path: '', url: 'http://3.92.213.204:3848/')], contextPath: null, war: 'target/*war'
@@ -61,6 +60,5 @@ Build status
 Landmark Technologies''', recipientProviders: [developers(), contributor()], subject: 'build status', to: 'developers'
 
     }
-  }
-*/  
+  } 
 }
